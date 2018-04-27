@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-output-azuresearch'
   s.version    =  File.read("VERSION").strip
-  s.authors = ["Yoichi Kawasaki"]
+  s.authors = ["Yoichi Kawasaki", "Dwight Spencer"]
   s.email = "yoichi.kawasaki@outlook.com"
   s.summary = %q{logstash output plugin to store events into Azure Search}
   s.description = s.summary
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   s.add_runtime_dependency "rest-client", "1.8.0"
-  s.add_runtime_dependency "logstash-core", ">= 2.0.0", "< 3.0.0"
+  s.add_runtime_dependency "logstash-core", ">= 5.0.0", "< 6.2.0"
   s.add_runtime_dependency "logstash-codec-plain"
   s.add_development_dependency "logstash-devutils"
 end
